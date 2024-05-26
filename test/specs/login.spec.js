@@ -6,9 +6,9 @@ describe('Kasir Aja Login Test', () =>{
         await browser.url('/')
 
          //masukin username (css locator)
-         await $('//*[@id="email"]').setValue('sukintem1@gmail.com');
+         await $('//*[@id="email"]').setValue('invalidemail@gmail.com');
          //masukin password (css locator)
-         await $('//*[@id="password"]').setValue('123456789');
+         await $('//*[@id="password"]').setValue('Password1');
  
          //klik login
          await $('//*[@class="chakra-button css-1n8i4of"]').click();
@@ -23,9 +23,9 @@ describe('Kasir Aja Login Test', () =>{
         await browser.url('/')
 
          //masukin username (css locator)
-         await $('//*[@id="email"]').setValue('sukintem@gmail.com');
+         await $('//*[@id="email"]').setValue('annisa@gmail.com');
          //masukin password (css locator)
-         await $('//*[@id="password"]').setValue('123456780');
+         await $('//*[@id="password"]').setValue('Password0');
  
          //klik login
          await $('//*[@class="chakra-button css-1n8i4of"]').click();
@@ -35,14 +35,14 @@ describe('Kasir Aja Login Test', () =>{
         await expect(errorMessage).toHaveTextContaining('Kredensial yang Anda berikan salah')
     })
 
-    it('should login successfully with valid credentials', async () => {
+    it('should login successfully with valid email', async () => {
         //Buka browser dan url
         await browser.url('/')
 
         //masukin username (css locator)
-        await $('//*[@id="email"]').setValue('sukintem@gmail.com');
+        await $('//*[@id="email"]').setValue('annisa@gmail.com');
         //masukin password (css locator)
-        await $('//*[@id="password"]').setValue('123456789');
+        await $('//*[@id="password"]').setValue('Password1');
 
         //klik login
         await $('//*[@class="chakra-button css-1n8i4of"]').click();

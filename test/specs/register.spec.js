@@ -8,11 +8,11 @@ describe('Kasir Aja Register Sucess', () =>{
         await $('//*[@id="root"]/div/div/div/div[2]/div/div[3]/a').click();
 
          //masukin name (css locator)
-         await $('//*[@id="name"]').setValue('starstoree');
+         await $('//*[@id="name"]').setValue('Annisa Store');
          //masukin email (css locator)
-         await $('//*[@id="email"]').setValue('star4@gmail.com');
+         await $('//*[@id="email"]').setValue('annisa@gmail.com');
          //masukin password (css locator)
-         await $('//*[@id="password"]').setValue('1234567');
+         await $('//*[@id="password"]').setValue('Password1');
          //button register
          await $('//*[@id="root"]/div/div/div/div[2]/div/button').click();
 
@@ -30,11 +30,11 @@ describe('Kasir Aja Register Sucess', () =>{
         await $('//*[@id="root"]/div/div/div/div[2]/div/div[3]/a').click();
 
          //masukin name (css locator)
-         await $('//*[@id="name"]').setValue('starstoreee');
+         await $('//*[@id="name"]').setValue('Annisa Store');
          //masukin email (css locator)
-         await $('//*[@id="email"]').setValue('star3');
+         await $('//*[@id="email"]').setValue('annisa');
          //masukin password (css locator)
-         await $('//*[@id="password"]').setValue('1234567');
+         await $('//*[@id="password"]').setValue('Password1');
          //button register
          await $('//*[@id="root"]/div/div/div/div[2]/div/button').click();
 
@@ -52,9 +52,9 @@ describe('Kasir Aja Register Sucess', () =>{
         await $('//*[@id="root"]/div/div/div/div[2]/div/div[3]/a').click();
 
          //masukin name (css locator)
-         await $('//*[@id="name"]').setValue('starstoree');
+         await $('//*[@id="name"]').setValue('Annisa Store');
          //masukin email (css locator)
-         await $('//*[@id="email"]').setValue('star1@gmail.com');
+         await $('//*[@id="email"]').setValue('annisa@gmail.com');
          //masukin password (css locator)
          await $('//*[@id="password"]').setValue('');
          //button register
